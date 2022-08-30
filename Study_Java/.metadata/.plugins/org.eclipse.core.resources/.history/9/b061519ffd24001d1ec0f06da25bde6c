@@ -1,0 +1,95 @@
+package thebrains.pim.service;
+
+import java.util.List;
+
+public class MemberServiceimpl<T> implements MemberService<T> {
+	// impl¿ª ∫Ÿø©¡‡
+	
+	private String memberdb = null;
+	
+	public MemberServiceimpl(String memberDB) {
+		memberdb = memberDB;
+	}
+	
+	@Override
+	public T login(String email, String pw) {
+		
+		return null;
+	}
+
+	@Override
+	public void logout() {
+		
+		
+	}
+
+	@Override
+	public int postMember(T member) {
+		
+		return 0;
+	}
+
+	@Override
+	public T getMember(T member) {
+		
+		return null;
+	}
+
+	@Override
+	public List<T> getMemberList() {
+		
+		return null;
+	}
+
+	@Override
+	public int putMember(T member) {
+		
+		return 0;
+	}
+
+	@Override
+	public int deleteMember(T member) {
+		
+		return 0;
+	}
+
+	@Override
+	public List<T> findMemberByPhone(T member) {
+		
+		return null;
+	}
+
+	@Override
+	public List<T> sortByName(String order) {
+		
+		return null;
+	}
+
+	@Override
+	public List<T> paginateByPerPage(int pageNo, int perPage) {
+		
+		return null;
+	}
+
+	@Override
+	public void readFile() {
+		
+		
+	}
+
+	@Override
+	public void saveFile() {
+		
+		
+	}
+
+	@Override
+	public void applyUpdate() {
+		
+		
+	}
+
+	
+	
+	
+}

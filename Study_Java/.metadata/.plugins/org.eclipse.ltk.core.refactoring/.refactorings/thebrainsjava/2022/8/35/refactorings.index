@@ -1,0 +1,16 @@
+1661481631559	Rename package 'thebrains.pim'
+1661481643488	Rename package 'thebrains.model'
+1661481651779	Rename package 'thebrains.controller'
+1661484668883	Rename type 'YUIView'
+1661493977368	Move file
+1661494314259	Copy compilation unit
+1661494328591	Delete element
+1661494350994	Rename resource 'file'
+1661494362069	Rename resource 'memberDB'
+1661494377229	Rename resource 'memberDB.text'
+1661494387952	Move 'memberDB' to 'src'
+1661495490249	Move 'memberDB' to 'thebrainsjava'
+1661495593690	Delete element
+1661497607527	Move compilation unit
+1661497950319	Rename type 'MemberRepository2'
+1661501958199	Delete element

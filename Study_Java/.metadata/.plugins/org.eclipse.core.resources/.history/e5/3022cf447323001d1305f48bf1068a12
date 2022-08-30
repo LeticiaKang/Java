@@ -1,0 +1,44 @@
+package kr.brain.Interf;
+
+public class SmartPhone implements Messenger, Timer, Phone {
+
+//===================== Messenger========================= 
+	@Override
+	public void sendMsg(String phoneNumber, String msg) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void receiveMsg() {
+		// TODO Auto-generated method stub
+
+	}
+
+//===================== Phone ========================= 
+	@Override
+	public void call(String phoneNumber) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void receive() {
+		// TODO Auto-generated method stub
+		
+	}
+
+//===================== Timer ========================= 
+	@Override
+	public void playBeep() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void playMusic(String title) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

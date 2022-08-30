@@ -1,0 +1,11 @@
+package thebrains.pim.view;
+
+import thebrains.pim.model.Member;
+import java.util.Scanner;
+import java.util.InputMismatchException;
+
+public class YUIView {
+	
+	
+
+}

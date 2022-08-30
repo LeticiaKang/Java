@@ -1,0 +1,11 @@
+package kr.brain07;
+
+public class Parallelogram extends Polygon{
+
+	@Override
+	public int evaluate() {
+		super.area = super.bottom * super.hight;
+		return super.area;
+	}
+
+}

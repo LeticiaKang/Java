@@ -1,0 +1,56 @@
+package kr.brain.project;
+import java.util.*;
+public class DataClass implements ScoreCal,Gender{
+	
+	public static void main(String[] args) {
+	
+		Scanner sc = new Scanner(System.in);
+
+		
+//		System.out.println("당신은 누굴 생각하고 계신가요?");
+		
+//		System.out.println("성별은? (남자 : 1, 여자 2)");
+//		answer= sc.nextLine();
+		
+	
+	
+}
+	
+	@Override
+	public void CalculScore(int queNum) {
+		if (queNum == 1) {
+			// 계산식
+		}
+		else if(queNum == 2) {
+			// 계산식
+		}
+		else if(queNum == 3) {
+			// 계산식
+		}
+		else if(queNum == 4) {
+			// 계산식
+		}
+		else if(queNum == 5) {
+			// 계산식
+		}
+		
+		
+		
+		
+	}
+	
+	String GenAnw;
+	String answer;
+	int score = 0;
+	@Override
+	public void QueGen() {
+		System.out.println("성별은? (남자 : 1, 여자 2)");
+		answer =sc.nextLine();
+		if(GenAnw == "1") {
+			score += 10;
+		}
+		else if(GenAnw == "2") {
+			score += 20;
+		}
+	}
+}

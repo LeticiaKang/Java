@@ -1,0 +1,12 @@
+package kr.brain02;
+
+public class CarExample {
+
+	public static void main(String[] args) {
+
+		String str = "현대자동차";
+		System.out.println(str.charAt(3));
+		
+	}
+
+}

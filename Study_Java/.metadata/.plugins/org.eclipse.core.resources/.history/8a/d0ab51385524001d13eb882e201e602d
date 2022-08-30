@@ -1,0 +1,52 @@
+package kr.brain.project;
+
+// 웹툰을 등록하고 조회하는 걸 해볼거야
+// 웬툰의 주요 필드는 뭐야? (저자, 제목, 장르, 판매부스)
+
+// 웹툰 Book종류
+// 인터페이스로 BOOk을 만들어야해
+public class Webtoon implements Book {
+
+	private String title;
+	private String genre;
+	private String author;
+	private int count;
+	
+	@Override
+	public String getTitle() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void setTitle() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public String getGenre() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void setGene() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public String getAuthor() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void setAuthor() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+
+}

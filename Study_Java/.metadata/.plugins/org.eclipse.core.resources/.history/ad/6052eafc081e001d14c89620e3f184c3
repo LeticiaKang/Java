@@ -1,0 +1,108 @@
+package sec03.eecam02;
+
+import java.util.Scanner;
+
+public class practice_ch_3_2_연산자 {
+
+	public static void main(String[] args) {
+
+// 4번
+		int pencils = 534;
+		int students = 30;
+		
+		// 학생 1명이 가지는 연필 개수
+		int pencilsPerStudent = pencils / students;
+		System.out.println(pencilsPerStudent);
+		
+		// 남은 연필 개수
+		int pencilsLeft = pencils - (pencilsPerStudent * students);
+		System.out.println("4번 : " + pencilsLeft);
+		
+// 5번
+		int var1 = 5;
+		int var2 = 2;
+		double var3 = (double) var1 / var2;
+	//	double var3 = var1 / (double) var2;
+		int var4 = (int) (var3 * var2);
+		System.out.println("5번 : " + var4);
+		
+// 6번
+		int value = 356;
+		System.out.println( "6번 : " + (value - 56) );
+		
+// 7번
+		float v1 = 10f;
+		double v2 = (double) v1 / 100 ;
+		if (v2 == 0.1) {
+			System.out.println("7번 : " + "10%입니다.");
+		} else {
+			System.out.println("7번 : " + "10%가 아닙니다.");
+		}
+
+// 8번
+		int lengthTop = 5;
+		int height = 7;
+		int lengthBottom = 10;
+		double area = (double) (lengthBottom + lengthTop)/2 * height;
+		System.out.println("8번 : " + area);
+					
+// 9번
+		Scanner sc = new Scanner(System.in);
+		/*		
+		System.out.print("첫 번째 수: ");
+		double one = sc.nextDouble();
+		
+		System.out.print("두 번째 수: ");
+		double two = sc.nextDouble();
+				
+	//	String result = (two == 0.0) ? "무한대" :  String.valueOf(one / two);
+		
+	if ( two == 0.0) {
+			System.out.println("9번 : 결과 : 무한대");
+		} else {
+			System.out.println("9번 : 결과 : " + one / two);
+		};
+		
+//		System.out.println("9번 : 결과: " + result);
+	*/	
+// 10번
+		int c1 = 10;
+		int c2 = 3;
+		int c3 = 14;
+		double c4 = c1 * c1 * Double.parseDouble(c2 + "." + c3);
+		System.out.println("10번 : 원의 넓이 : " + c4);
+		
+		
+// 11번
+		
+		System.out.print("아이디: ");
+		String name = sc.nextLine();
+
+		System.out.print("패스워드: ");
+		String pw_str = sc.nextLine();
+		int pw_int = Integer.parseInt(pw_str);
+		
+		String ID = "java";
+		/*		
+		if (name.equals(ID)) {
+			if (pw_int == 12345) {
+				System.out.println("로그인 성공!");
+			}else {
+				System.out.println("로그인 실패 : 패스워드 틀림");
+		}
+		}else {
+			System.out.println("로그인 실패 : 아이디 존재하지 않음");
+		}
+*/
+		if (name.equals(ID)) {
+			String result1 = (pw_int == 12345) ? "로그인 성공" : "로그인 실패! 패스워드 틀림"; 
+			System.out.println(result1);
+		}else {
+			System.out.println("로그인 실패! 아이디 존재하지 않음");
+		}
+		
+
+		
+		}
+	}
+

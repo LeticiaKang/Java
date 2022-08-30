@@ -1,0 +1,10 @@
+package thebrains.pim.controller;
+
+public class MemberController {
+	
+	public void dispatch() {
+		// dispatch라는 것은 시작의 의미가 있음; 명령을 가져옴
+		System.out.println("MemberController의 dispatch 메소드를 호출하셨습니다.");
+	}
+	
+}

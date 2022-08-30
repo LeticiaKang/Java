@@ -1,0 +1,6 @@
+package kr.brain.Interf;
+
+public interface Phone {
+	void call(String phoneNumber);
+	void receive();
+}

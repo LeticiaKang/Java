@@ -1,0 +1,24 @@
+package kr.brain07;
+import java.util.*;
+public class PolygonExample {
+	// 매개변수 배열을 사용하면 매개변수 개수를 가변적으로 사용할 수 있음
+	public static void main(String[] args) {
+		
+		ArrayList<Polygon> arrPoly = new ArrayList<>();
+		
+		Polygon poly = new Triangle(50, 20);
+		System.out.println("넓이 : " + poly.evaluate());
+		arrPoly.add(poly);
+		
+		poly = new Rectangle(80);
+		System.out.println("넓이 : " + poly.evaluate());
+		arrPoly.add(poly);
+		
+		poly = new Trapezoid(50, 80, 60);
+		System.out.println("넓이 : " + poly.evaluate());
+		arrPoly.add(poly);
+		
+		for (Polygon p : arrPoly)
+			System.out.println("sjfq이는 : " + poly.evaluate());
+	}
+}

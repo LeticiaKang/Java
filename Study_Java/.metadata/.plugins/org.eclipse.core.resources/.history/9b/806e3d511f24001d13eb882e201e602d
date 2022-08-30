@@ -1,0 +1,14 @@
+package kr.brain.api;
+
+public class Overriding {
+	public void testEquals(Object o1, Object o2) {
+		if(o1 instanceof String && o2 instanceof String) {
+			if(((String) o1).equals((String) o2)) {
+				
+			}
+		}
+		
+		
+	}
+
+}

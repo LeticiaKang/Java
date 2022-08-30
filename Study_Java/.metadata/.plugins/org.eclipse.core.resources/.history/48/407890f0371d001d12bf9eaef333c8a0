@@ -1,0 +1,45 @@
+package sec03.eecam02;
+
+public class char_bool_self_study {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		/* 작은 따옴표로 감싼 것을 "문자 리터럴"이라고 한다.
+		 * 
+		 */
+		
+		char a1 = 'a';
+		char a2 = 97;  //아스키코드로 표현한 것
+		char a3 = '\u0061';  //유니코드로 표현한 것
+				
+		System.out.println(a1);
+		System.out.println(a2);
+		System.out.println(a3);
+		
+		char c_10 = 65;  // A = 유니코드 10진수로 65
+		char c_16 = 0x0041; // A = 65를 16진수로 표현
+		
+		System.out.println(c_10);
+		System.out.println(c_16);
+		
+		char t_char = 'B';
+//		int t_int = 'AA'; 
+	//  ▶ int에는 문자를 대입할 수 없기 때문에 error
+		
+		System.out.println("t_char : " + t_char);
+//		System.out.println(t_int);
+		
+		boolean stop = true;
+		if(stop) {
+			System.out.println("중지합니다.");
+			} 
+		else {
+				System.out.println("시작합니다.");
+			}
+		
+		
+		
+	}
+
+}

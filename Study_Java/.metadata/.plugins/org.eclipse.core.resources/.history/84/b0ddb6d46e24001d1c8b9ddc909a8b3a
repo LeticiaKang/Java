@@ -1,0 +1,65 @@
+package kr.brain.project;
+import java.util.*;
+public class DataClass implements Gender{
+	
+	public static void main(String[] args) {
+	
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println("당신은 누굴 생각하고 계신가요?");
+//		System.out.println("성별은? (남자 : 1, 여자 2)");
+//		answer= sc.nextLine();
+//}
+		String ansr;
+		
+		DataClass person = new DataClass();
+		person.QueGen("1");
+		
+		
+	}
+	
+	
+		String answer;
+		int score = 0;
+		
+		@Override
+		public int QueGen(String answer) {
+		//	Scanner sc = new Scanner(System.in);
+		//	System.out.println("성별은? (남자 : 1, 여자 2)");
+		//	answer = sc.nextLine();
+			
+			if(answer == "1") {
+				score = score + 10;
+			}
+			else if(answer == "2") {
+				score  = score + 20;
+			}
+			return score;
+			
+		}
+
+		
+		
+/*	
+	@Override
+	public void CalculScore(int queNum) {
+		if (queNum == 1) {
+			// 계산식
+		}
+		else if(queNum == 2) {
+			// 계산식
+		}
+		else if(queNum == 3) {
+			// 계산식
+		}
+		else if(queNum == 4) {
+			// 계산식
+		}
+		else if(queNum == 5) {
+			// 계산식
+		}
+*/		
+		
+		
+		
+//
+}

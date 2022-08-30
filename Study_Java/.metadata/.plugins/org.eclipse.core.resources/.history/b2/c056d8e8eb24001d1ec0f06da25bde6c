@@ -1,0 +1,10 @@
+package thebrains.pim.model;
+
+public class Member {
+	
+	private int mno; //멤버 고유 번호(Member Number) - unique, primary
+	private String email; //이메일을 아이디로 사용할거야, 길이 20 - unique
+	private String pw; //길이 15
+	private String name; //길이 15
+	
+}

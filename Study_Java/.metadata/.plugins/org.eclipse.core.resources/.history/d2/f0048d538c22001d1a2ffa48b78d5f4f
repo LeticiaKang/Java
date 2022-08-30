@@ -1,0 +1,68 @@
+package kr.brain02;
+//▶ 책 페이지 : 256
+public class Car {
+  
+	//▶ 2개의 인스턴스 멤버 필드, 4개의 인터페이스 메소드
+	String model;       //▶ field
+	private int gas;   //▶ field
+	
+	// setter, getter Method
+	//▶ Method "setGet"
+	void setGas(String gasString) {
+		
+		int gas;
+		
+		if (gasString.indexOf('L') == gasString.length() ) {
+			gasString = gasString.replace("L", "");
+		}
+		else if (gasString.indexOf('l') == gasString.length()){
+				gasString = gasString.replace("l", "");
+		}else {
+			System.out.println("L 또는 l로 입력하세요!!");
+		}
+			gas = Integer.parseInt(gasString);
+		
+		// 가스를 0과 60사이 주입하면 반환 , 가스를 60이상이면 경고문
+		if (gas >= 0 & gas <= 60) {
+			this.gas = gas;
+		}
+		else if(gas > 60) {
+			System.out.println("최대 양은 60L입니다.");
+			gas = 60;
+		}
+	}
+	
+	//▶Method "getGas"
+	int getGas() {
+		return gas;
+	}
+	
+	//▶ Method "isLeftGas"	
+	boolean isLeftGas() {
+		boolean isLeft = true;
+		
+		if (gas == 0) {
+			System.out.print("가스없음\n");
+			isLeft = false;
+		}
+		else 
+			System.out.print("가스있음\n");
+		return isLeft;
+	}
+
+	//▶ Method "run"
+	void run(int run) {
+		
+		// 20km마다 1L씩 감소 = km당 0.05L감소
+		
+		while(true) {
+			if (gas > 10) {
+				System.out.println("달립니다. gas 잔량 (" + gas + ")");
+				
+				//System.out.println("주유하세요!");
+			}else if(gas == 0)
+				System.out.println("멈춥니다. gas 잔량 (" + gas + ")");
+				// true일 때 -> break;
+		}
+	}
+}

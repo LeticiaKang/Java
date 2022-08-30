@@ -1,0 +1,11 @@
+package kr.brain07;
+
+public class Square extends Polygon{
+
+	@Override
+	public int evaluate() {
+		super.area = super.bottom * super.hight;
+		return super.area;
+	}
+
+}

@@ -1,0 +1,17 @@
+package kr.brain.Interf;
+
+public class Something {
+	// 자료구조(Data Structure : 재료)
+	private String title;
+	private String content;
+	private String writer;
+	private String regDate;
+	
+	//자료구조를 활용하는 메소드 : 가공 & 연산
+	public void printAllFields() {
+		 System.out.println(title);
+		 System.out.println(content);
+		 System.out.println(writer);
+	}
+	
+}

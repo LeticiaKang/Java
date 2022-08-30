@@ -1,0 +1,27 @@
+package kr.brain.api;
+import java.util.Calendar;
+public class CarExample {
+	public static void main(String[] args) throws Exception{
+		//Exception유형의 예외가 발생하면 호출한 메소드로 전달해라
+
+//=================================================================//
+		Class clazz = Car.class;
+//		Class 참조변수 = 다른클래스명.class;
+		System.out.println(clazz.getPackageName() + "." + clazz.getSimpleName());
+		// getPackaeName 패키지 이름 그 자체를 가져옴
+		// getSimpleName : class이름 그 자체를 가져옴
+		// getName : 패키지.클래스 전체를 가져옴
+		
+		Class clazz1 = Class.forName("kr.brain.api.Car");
+		System.out.println(clazz1.getPackageName());
+	
+//=================================================================//
+		// Calender는 추상클래스 입니당
+		Calendar rightNow = Calendar.getInstance();
+		System.out.println(rightNow.DAY_OF_YEAR);
+		System.out.println(rightNow.YEAR);
+		System.out.println(rightNow.YEAR);
+		
+	}
+
+}

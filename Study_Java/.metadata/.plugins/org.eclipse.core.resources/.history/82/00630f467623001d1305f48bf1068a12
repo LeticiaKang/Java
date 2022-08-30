@@ -1,0 +1,14 @@
+package kr.brain.Interf;
+
+public class Something {
+
+	private String title;
+	private String content;
+	private String writer;
+	
+	pulic void printAllFields() {
+		 System.out.println(title);
+		 System.out.println(content);
+	}
+	
+}

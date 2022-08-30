@@ -1,0 +1,11 @@
+package kr.brain.project;
+
+// 웹툰을 등록하고 조회하는 걸 해볼거야
+// 웬툰의 주요 필드는 뭐야? (저자, 제목, 장르, 판매부스)
+
+// 웹툰 Book종류
+// 인터페이스로 BOOk을 만들어야해
+public class Webtoon implements Book {
+	
+
+}

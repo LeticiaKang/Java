@@ -1,0 +1,6 @@
+#Tue Aug 23 15:01:49 KST 2022
+__DEFAULT__=false
+expression=intellj
+org.eclipse.help.ui.localSearch.master=true
+org.eclipse.sdk.Eclipse.master=true
+org.eclipse.sdk.Google.master=true

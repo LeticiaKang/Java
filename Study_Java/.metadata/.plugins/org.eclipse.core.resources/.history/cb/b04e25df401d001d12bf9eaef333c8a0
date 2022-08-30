@@ -1,0 +1,46 @@
+package sec03.eecam02;
+
+public class type_change_self_study {
+
+	public static void main(String[] args) {
+
+		// double > float > long > int > short > byte
+		
+		int intValue = 10;
+		byte byteValue = (byte) intValue;
+		// (byte) 와 같은 캐스팅 연산자를 사용해서 강제 변환 가능
+		
+		System.out.println(intValue);
+		System.out.println(byteValue);
+		
+		intValue = 44032;
+		char charValue = (char) intValue ;
+		System.out.println(charValue);
+		// 유니코드 번호를 문자로 바꿔줌. 원래는 안됨! 
+		
+		long longValue = 500;
+		intValue = (int) longValue;
+		System.out.println("intValue : " + intValue + ", " + "longValue : " + longValue);
+
+		double doubleValue = 3.14;
+		intValue = (int) doubleValue;
+		System.out.println("intValue : " + intValue + ", " + "doubleValue : " + doubleValue);
+		
+		byte result1 = 10 + 20;
+		System.out.println(result1);
+		
+		byte x = 10;
+		byte y = 20;
+		int result3 = x + y;
+		System.out.println(result3);
+		// ▶ byte로 지정했지만 int 연산되어 저장됨. int가 더 크니까
+		
+		byte A1 = 100;
+		int A2 = 1000;
+		long A3 = 10000L;
+		long result_A = A1 + A2 + A3;
+		System.out.println(result_A);
+		
+	}
+
+}

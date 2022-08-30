@@ -1,0 +1,70 @@
+package thebrains.pim.repository;
+
+import java.util.List;
+
+import thebrains.pim.model.Member;
+
+public class MemberRepositoryImpl<T> implements MemberRepository<T>{
+
+   public List<T> memberList = null;
+   //1 리스트에 memberList라는 것을 하나 만드시고(생성하는거에여)
+   
+    @Override
+    public int create(T member) {
+        int ret = 0;
+        try {
+            memberList.add(member);
+            return 1;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return 0;
+        }
+    }
+	    
+	    
+	@Override
+	public T readById(T member) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	//2 그리고 
+	 public T readByEmail(T member) {
+	        for(T m : memberList) {
+	            if(((Member) m).getEmail().equals(((Member) member).getEmail()))
+	                return m; // 첫 번째 email 같은 요소를 반환
+	        }
+	        return null;
+	    }
+
+	@Override
+	public List<T> readList() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int update(T member) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int delete(T member) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public List<T> getMemberList() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void setMemberList(List<T> memberList) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

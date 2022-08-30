@@ -1,0 +1,15 @@
+package kr.brain07;
+import java.util.*;
+public abstract class Polygon {
+		
+		// 삼각형, 직사각, 정사각, 평행사변, 사다리꼴
+		int hight;
+		int top;
+		int bottom;
+		int area;
+		
+		public abstract int evaluate();
+		
+
+
+}

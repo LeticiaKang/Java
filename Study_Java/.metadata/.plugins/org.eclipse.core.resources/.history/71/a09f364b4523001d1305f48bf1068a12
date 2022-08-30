@@ -1,0 +1,16 @@
+package kr.brain07;
+
+public class Polygon {
+		
+		// 삼각형, 직사각, 정사각, 평행사변, 사다리꼴
+		int hight;
+		int top;
+		int bottom;
+		int area;
+		
+		int evaluate(); {
+			return area;
+		}
+
+
+}

@@ -1,0 +1,11 @@
+package kr.brain02;
+
+public class PracticeBinary {
+
+	public static void main(String[] args) {
+
+		System.out.println(Integer.toBinaryString(34)));
+		
+	}
+
+}

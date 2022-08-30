@@ -1,0 +1,11 @@
+package kr.brain.api;
+
+public class APIExample {
+
+	public static void main(String[] args) {
+
+		System.out.println(128 >>> 3);
+		
+	}
+
+}

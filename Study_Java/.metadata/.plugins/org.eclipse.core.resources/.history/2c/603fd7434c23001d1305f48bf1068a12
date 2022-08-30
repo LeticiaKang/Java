@@ -1,0 +1,6 @@
+package kr.brain07;
+
+public class Trapezoid extends Polygon{
+	int area = ( getTop() + getWidth() ) *  getHeight() / 2;
+	return area;
+}

@@ -1,0 +1,36 @@
+package kr.brain02;
+
+public class ArrayListTest {
+	
+	public static void main(String[] args) {
+		
+		ArrayListExt<String> ale = new ArrayListExt<String>();
+		ArrayListExt<StringBuffer> ale000 = new ArrayListExt<StringBuffer>();
+		// ArrayList는 배열형태로 데이터를 저장하는데
+		// String형태만 저장한다!
+		// StringBuffer : 객체를 생성하는방식이 좀 달라
+		
+		ale000.add(new String("고객"));
+		
+//		String name = new String("이름");
+		ale.add(new String("고객")); 
+		ale.add("경험 ");
+		ale.add("데이터를 ");
+		ale.add("활용한 ");
+		ale.add("데이터 ");
+		ale.add("비즈니스 ");
+		ale.add("분석가 과정");
+		
+		// for문 : 반복수가 정해진 경우, 순차 접근이 가능한 경우, 
+		for (int s = 0; s < ale.size(); s+=2) 
+			System.err.print(ale.get(s));
+		
+		System.out.println();
+		// ale에 저장한 문자열이 있는데 첫번째부터 끝까지 가져옴
+		// collection 즉 집합 객체만 이렇게 사용할 수 있음
+		// for-each statement : collection 객체의 순차 접근
+		for (String s : ale)  
+			System.out.print(s);
+		
+	}
+}

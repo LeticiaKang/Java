@@ -1,0 +1,13 @@
+package sec03.eecam02;
+
+public class type_change_self_study {
+
+	public static void main(String[] args) {
+
+		int intValue = 10;
+		byte byteValue = (byte) intValue
+		
+		
+	}
+
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="kr.brain02.Other"/>
+    <fullyQualifiedTypeName name="kr.brain03.Other"/>
+    <fullyQualifiedTypeName name="java.lang.Number"/>
+    <fullyQualifiedTypeName name="kr.brain07.NewNumber"/>
+    <fullyQualifiedTypeName name="T"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="kr.brain07.Trapezoid"/>
+    <fullyQualifiedTypeName name="kr.brain07.PolygonExample"/>
+    <fullyQualifiedTypeName name="kr.brain07.Triangle"/>
+    <fullyQualifiedTypeName name="kr.brain07.Rectangle"/>
+    <fullyQualifiedTypeName name="kr.brain07.Square"/>
+    <fullyQualifiedTypeName name="java.util.Stack"/>
+    <fullyQualifiedTypeName name="kr.brain07.Polygon"/>
+    <fullyQualifiedTypeName name="java.lang.StrictMath"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="kr.brain.Interf.SmartPhone"/>
+    <fullyQualifiedTypeName name="kr.brain.Interf.CameraPhone"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="java.util.Objects"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="thebrains.pim.view.TUIView"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+    <fullyQualifiedTypeName name="org.w3c.dom.css.CSSRule"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="thebrains.pim.service.MemberService"/>
+    <fullyQualifiedTypeName name="thebrains.pim.service.MemberServiceimpl"/>
+    <fullyQualifiedTypeName name="thebrains.pim.controller.MemberController"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="thebrains.pim.model.Member"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="thebrains.pim.repository.MemberRepository"/>
+    <fullyQualifiedTypeName name="thebrains.pim.repository.MemberRepositoryImpl"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Member"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+</qualifiedTypeNameHistroy>

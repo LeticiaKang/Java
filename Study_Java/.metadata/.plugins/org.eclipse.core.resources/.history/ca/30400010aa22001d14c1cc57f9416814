@@ -1,0 +1,9 @@
+package kr.brain03;
+
+public class Same {
+
+	private int privatedField = 1;
+	public int publicdField = 2;
+	int defaultField = 3;
+	
+}

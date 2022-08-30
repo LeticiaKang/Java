@@ -1,0 +1,5 @@
+package thebrains.pim.repository;
+
+public class MemberRepositoryImpl<T> implements MemberRepository<T>{
+	
+}
