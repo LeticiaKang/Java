@@ -1,0 +1,5 @@
+MySQL들어가기
+Database에 Connect to database 클릭
+Connection Method, hostname, port, username, 연결하고 싶은 Default  Schema 입력
+Select*From (원하는 테이블명)으로 테이블 전체 출력
+출력된 데이터(column명, 데이터 값) 확인하기
