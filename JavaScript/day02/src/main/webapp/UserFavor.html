@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form action="userfavor" method="post">
+
+<b>이름</b><br>
+<input type="text" name="name" value="이름을 입력하세요."><br>
+<b>나이</b><br>
+<input type="text" name="age" value="나이를 입력하세요"><br>
+<hr>
+
+<b>성별</b><br>
+<input type="radio" name="gender" value="남자">남자
+<input type="radio" name="gender" value="여자">여자<br>
+
+<b>좋아하는 음식(복수개 선택 가능)</b><br>
+<select name = "food" multiple size=4><!-- 복수개 선택 가능 -->
+<option>제육볶음 
+<option>순댓국
+<option>떡볶이
+<option>돈가스
+</select><br>
+
+<b>관심 분야</b><br>
+<input type="checkbox" name="interest" value="웹프로그램">웹프로그램
+<input type="checkbox" name="interest" value="네트워크관리">네트워크관리
+<input type="checkbox" name="interest" value="보안">보안
+<input type="checkbox" name="interest" value="게임프로그램">게임프로그램
+<input type="checkbox" name="interest" value="데이터분석">데이터분석<br>
+
+<input type="submit" value="제출">
+
+</form>
+
+</body>
+</html>
