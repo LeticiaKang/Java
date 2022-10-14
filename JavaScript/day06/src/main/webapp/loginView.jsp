@@ -1,4 +1,4 @@
-<%@page import="beans.Member"%>
+<%@page import="com.member.beans.memberManager"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -17,7 +17,7 @@
 	
 	%>
 	<!-- request 객체에 저장된 값을 getProperty 액션태그 이용해서 가져오기 -->
-	<jsp:useBean id="member" class="beans.Member" scope="request"/>
+	<jsp:useBean id="member" class="com.member.beans.MemberBeans" scope="request"/>
 	
 	<table >
 		<tr>

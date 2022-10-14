@@ -1,7 +1,9 @@
-<%@page import="java.util.List"%>
 <%@page import="com.addr.app.AddrBean"%>
+<%@page import="java.util.List"%>
+<%@page import="com.addr.app.AddrManager"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<jsp:useBean id="manager" class="com.addr.app.AddrManager" scope="application"/>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,31 +16,31 @@
 </head>
 <body>
 	<!-- request 객체에 저장된 값을 getProperty 액션태그 이용해서 가져오기 -->
-	<jsp:useBean id="adm" class="com.addr.app.AddrManager" scope="request"/>
-	<jsp:useBean id="user" class="com.addr.app.AddrBean" scope="request"/>
+	<jsp:useBean id="user" class="com.addr.app.AddrBean" scope="session"/>
 	<div>
-	<h3><%= session.getAttribute("name") %>님 환영합니다!!</h3>
+	<h3><%= user.getUsername() %>님 환영합니다!!</h3>
 	</div>
 	<table >
 		<tr>
-			<td colspan="2"><h3>동호회 회원 현황</h3></td>
+			<td colspan="3"><h3>동호회 회원 현황</h3></td>
 		</tr>
-			<% 
-				List<AddrBean> userList = adm.getAddrList();
-				for(int n=0; n< userList.size(); n++){
-					AddrBean us = userList.get(n);
-			%>
 		<tr>
 			<td>이름</td>
-			<td><%= us.getUsername()%></td>
-		</tr>
-		<tr>
-			<td>전화번호</td>
-			<td><%= us.getTel() %></td>
-		</tr>
-		<tr>
 			<td>성별</td>
-			<td><%= us.getGender() %></td>
+			<td style="width:150px">전화번호</td>
+		</tr>
+			<%
+				for(AddrBean bean : manager.getAddrList()) {
+			%>
+			<% 
+				//List<AddrBean> userList = manager.getAddrList();
+				//for(int n=0; n< userList.size(); n++){
+				//	AddrBean addrBean = userList.get(n);
+			%>
+		<tr>
+			<td><%= bean.getUsername()%></td>
+			<td><%= bean.getGender() %></td>
+			<td style="width: 100px"><%= bean.getTel() %></td>
 		</tr>
 		<% } %>
 	</table>

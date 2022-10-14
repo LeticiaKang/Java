@@ -12,7 +12,10 @@
 	<div align=center>
 	<H2>주소록</H2>
 	<HR>
-	<a href="addr_form.html">주소추가</a><P>
+	<button><a href="addr_form.jsp">주소추가</a></button>
+	<button><a href="main.jsp">첫 페이지로</a></button>
+	<button><a href="login.jsp">로그인하기</a></button>
+	<P>
 	<table border=1 width=500>
 		<tr>
 			<td>구분</td>

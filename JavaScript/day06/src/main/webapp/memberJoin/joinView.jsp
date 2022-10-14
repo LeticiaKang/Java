@@ -1,6 +1,5 @@
 <%@page import="java.util.ArrayList"%>
 <%@page import="com.member.beans.MemberBeans"%>
-<%@page import="beans.Member"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <jsp:useBean id="ml" class="com.member.beans.memberManager" scope="application"/>  

@@ -43,7 +43,7 @@
 		<tr><td colspan=2 align=center>
 			<input type=hidden value="0" name=grade>
 			<input type=submit value="확인">
-			<input type=reset value="취소"></td></tr>
+			<button><a href="main.jsp">취소</a></button></td></tr>
 	</table>
 	
 	</form>

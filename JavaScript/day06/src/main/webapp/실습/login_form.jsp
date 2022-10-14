@@ -1,5 +1,7 @@
+
+<%@page import="com.addr.app.AddrManager"%>
 <%@page import="com.addr.app.AddrBean"%>
-<jsp:useBean id="adm" class="com.addr.app.AddrManager" scope="session"/>
+<jsp:useBean id="manager" class="com.addr.app.AddrManager" scope="application"/>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -10,34 +12,35 @@
 </head>
 <body>
 	<%
-	
 	//request 객체에서 데이터 분리/가져오기
 	request.setCharacterEncoding("utf-8");
-	
-	//AddrBean 객체 생성하고 데이터 저장
-	AddrBean user = new AddrBean();
+	String userId = request.getParameter("id");
+	String userPwd = request.getParameter("pwd");
+	if(userId == null || userPwd == null) response.sendRedirect("main.jsp");
+	%>
+	<!-- 전송된 로그인 정보 가져오기  -->
+	<jsp:useBean id="user" class="com.addr.app.AddrBean" scope="session"/>
 
-	//전송된 로그인 정보 가져오기
-	String id = request.getParameter("id");
-	String pwd = request.getParameter("pwd");
-	String name = null;
-	session.setAttribute("id", id);
-	session.setAttribute("pwd", pwd);
+	<%
 	
 	//id,pwd 맞는지 확인하고 회원 이름 가져오기
-	if(adm.CheckUser(id, pwd)) name = user.getUsername();
-	// 맞다면 이름 출력
-	System.out.println(name);
-	// 맞으면 000님 환영합니다 페이지로 가고, 틀리면 main페이지로 가기
+	//CheckUser에 매개변수를 넣어 확인하는데, 맞으면 true 틀리면 false가 나온다.
+	//회원인 경우 name을 화면에 보이고 싶음(예; 00님 환영합니다)
+	String name = null; 
+	System.out.println(userId + " " + userPwd);
+	name = manager.CheckUser(userId, userPwd);
+	System.out.println("로긴form 32줄" + name); //확인용
+	//회원이면 View로 아니면 main으로 이동
 	if(name != null){
 		session.setAttribute("name", name);
 		response.sendRedirect("loginView.jsp");
-	}else{
+		System.out.println("로긴form 37줄" + name); //확인용
+	}else {
 		response.sendRedirect("main.jsp");
+		System.out.println("로긴form 40줄" + name); //확인용
 	}
 	
 	%>
-
  
 </body>
 </html>

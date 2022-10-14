@@ -31,6 +31,7 @@
 	<p>
 	<button><a href="addr_form.jsp">회원가입</a></button>
 	<button><a href="login.jsp">로그인</a></button>
+	<button><a href="addr_list.jsp">회원목혹</a></button>
 
 </body>
 </html>

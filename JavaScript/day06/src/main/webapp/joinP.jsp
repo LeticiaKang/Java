@@ -22,7 +22,7 @@
     request.setAttribute("member", member);
 */	%>
 
-	<jsp:useBean id="member" class="beans.Member" scope="request"/>
+	<jsp:useBean id="member" class="com.member.beans.MemberBeans" scope="request"/>
 <!--	<jsp:setProperty property="*" name="member"/> -->
 	<jsp:setProperty property="id" name="member"/>
 	<jsp:setProperty property="pwd" name="member"/>
@@ -34,22 +34,22 @@
 
 	%>
 
-<!--  결과값이 나오는 페이지가 의미 없기 때문에 주석처리
+<!--  결과값이 나오는 페이지가 의미 없기 때문에 주석처리 --> 
 	<table >
 		<tr>
 			<td colspan="2"><h3>회원가입 결과</h3></td>
 		</tr>
 		<tr>
-			<td>아이디</td><td><%=member.getId()%></td>
+			<td>아이디</td><td><%= member.getId() %> %>%></td>
 		</tr>
 		<tr>
-			<td>비밀번호</td><td><%=member.getPwd()%></td>
+			<td>비밀번호</td><td><%= member.getPwd()%></td>
 		</tr>
 		<tr>
-			<td>이름</td><td><%=member.getName()%></td>
+			<td>이름</td><td><%= member.getName()%></td>
 		</tr>
 	</table>
- -->
+
  
 </body>
 </html>
