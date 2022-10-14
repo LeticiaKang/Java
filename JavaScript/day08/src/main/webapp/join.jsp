@@ -46,8 +46,7 @@
 			</tr>
 			<tr>
 				<td colspan="2" align="center"><input type="submit" value="확인"
-					onclick="return joinCheck()">
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="reset" value="취소">
+					onclick="return joinCheck()"><input type="reset" value="취소">
 				</td>
 			</tr>
 			<tr>
@@ -57,3 +56,8 @@
 	</form>
 </body>
 </html>
+<script>
+	function idCheck(){
+		
+	}
+</script>

@@ -1,4 +1,4 @@
-package com.smart.dto;
+package member.dto;
 
 public class MemberVO {
 	private String name;

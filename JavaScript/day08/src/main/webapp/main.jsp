@@ -20,10 +20,13 @@
 				<td>안녕하세요. ${loginUser.name}(${loginUser.userid})님</td>
 			</tr>
 			<tr>
-				<td colspan="2" align="center"><input type="submit"
-					value="로그아웃"> &nbsp;&nbsp; <input type="button"
+				<td colspan="2" align="center">
+					<input type="submit" value="로그아웃"> &nbsp;&nbsp; 
+					<input type="button"
 					value="회원정보변경"
 					onclick="location.href='memberUpdate.do?userid=${loginUser.userid}'">
+					<input type="button" value="탈퇴하기"
+					onclick="location.href='memberDelete.do?userid=${loginUser.userid}'">  
 				</td>
 			</tr>
 		</table>

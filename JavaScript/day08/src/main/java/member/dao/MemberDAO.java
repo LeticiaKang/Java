@@ -1,4 +1,4 @@
-package com.smart.dao;
+package member.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -8,7 +8,7 @@ import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.sql.DataSource;
 
-import com.smart.dto.MemberVO;
+import member.dto.MemberVO;
 
 public class MemberDAO {
 	private MemberDAO() {
@@ -32,7 +32,7 @@ public class MemberDAO {
 	// 사용자 인증시 사용하는 메소드
 	public int userCheck(String userid, String pwd) {
 		int result = -1;
-		String sql = "select pwd from member where userid=?";
+		String sql = "select * from member where userid=?";
 		Connection conn = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
@@ -42,13 +42,15 @@ public class MemberDAO {
 			pstmt.setString(1, userid);
 			rs = pstmt.executeQuery();
 			if (rs.next()) {
-				if (rs.getString("pwd") != null
-						&& rs.getString("pwd").equals(pwd)) {
-					result = 1;
-				} else {
+				if (rs.getString("pwd") != null && rs.getString("pwd").equals(pwd)) {
+					if(rs.getString("admin")=="1") { //관리자일 경우  +2
+						result = 2;
+					}else //일반회원인 경우  +1
+						result = 1;
+				} else { //비밀번가 틀렸을 경우  0
 					result = 0;
 				}
-			} else {
+			} else { //select 실패  -1
 				result = -1;
 			}
 		} catch (Exception e) {
@@ -67,7 +69,39 @@ public class MemberDAO {
 		}
 		return result;
 	}
-
+	
+	//사용자 탈퇴하는 메소드
+	public int userDelete(String userid) {
+		int result = -1;
+		String sql = "Delete from member where userid=?";
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		int rs = 0;
+		try {
+			conn = getConnection();
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, userid);
+			rs = pstmt.executeUpdate();
+			if (rs == 1) {
+				result =1; //성공
+			} else {
+				result = 0; //실패
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if (pstmt != null)
+					pstmt.close();
+				if (conn != null)
+					conn.close();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		return result;
+	}
+	
 	// 아이디로 회원 정보 가져오는 메소드
 	public MemberVO getMember(String userid) {
 		MemberVO mVo = null;

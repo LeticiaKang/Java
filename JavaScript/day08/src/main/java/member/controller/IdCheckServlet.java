@@ -1,4 +1,4 @@
-package com.smart.conroller;
+package member.controller;
 
 import java.io.IOException;
 
@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.smart.dao.MemberDAO;
+import member.dao.MemberDAO;
 
 /**
  * Servlet implementation class IdCheckServlet

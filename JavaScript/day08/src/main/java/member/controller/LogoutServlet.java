@@ -1,4 +1,4 @@
-package com.smart.conroller;
+package member.controller;
 
 import java.io.IOException;
 
@@ -10,8 +10,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.smart.dao.MemberDAO;
-import com.smart.dto.MemberVO;
+import member.dao.MemberDAO;
+import member.dto.MemberVO;
 
 /**
  * Servlet implementation class LogoutServlet
@@ -37,7 +37,7 @@ public class LogoutServlet extends HttpServlet {
 		HttpSession session = request.getSession();
 		session.invalidate();
 		RequestDispatcher dispatcher = request
-				.getRequestDispatcher("member/login.jsp");
+				.getRequestDispatcher("login.jsp");
 		dispatcher.forward(request, response);
 	}
 

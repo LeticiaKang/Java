@@ -15,7 +15,11 @@
 
 <%		try{
 			Context initContext = new InitialContext();
+			// (Context) initCtx.lookup("java:comp/env")에서“”안에 
+			// 기술된 이름을 lookup()메소드를 사용해서 찾음
 			Context envContext = (Context) initContext.lookup("java:/comp/env");
+			//ontext객체의 lookup 메소드 이용하여 "jdbc/mysql“ 관련 객체를 리턴. 
+			//이 때 DataSource 객체 타입으로 형변환함
 			DataSource ds = (DataSource) envContext.lookup("jdbc/mysql");
 			Connection conn = ds.getConnection();
 			if(conn!=null){
