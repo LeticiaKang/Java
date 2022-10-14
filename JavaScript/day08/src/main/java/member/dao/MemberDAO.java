@@ -42,15 +42,12 @@ public class MemberDAO {
 			pstmt.setString(1, userid);
 			rs = pstmt.executeQuery();
 			if (rs.next()) {
-				if (rs.getString("pwd") != null && rs.getString("pwd").equals(pwd)) {
-					if(rs.getString("admin")=="1") { //관리자일 경우  +2
-						result = 2;
-					}else //일반회원인 경우  +1
-						result = 1;
-				} else { //비밀번가 틀렸을 경우  0
+				if(rs.getString("admin")=="1") { //로그인 성공 +1
+					result = 1;
+				} else { //비밀번가 틀렸을 경우 0
 					result = 0;
 				}
-			} else { //select 실패  -1
+			} else { //select 실패
 				result = -1;
 			}
 		} catch (Exception e) {
