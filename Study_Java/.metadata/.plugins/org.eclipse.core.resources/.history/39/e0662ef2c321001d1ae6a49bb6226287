@@ -1,9 +1,0 @@
-package kr.brain;
-
-public class ModCalculator extends NewCalculator {
-	
-	public ModCalculator() {
-		
-	}
-	
-}

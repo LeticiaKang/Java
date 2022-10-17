@@ -1,9 +1,0 @@
-package kr.brain.Interf;
-
-public interface Phone {
-	
-	String phoneNumber = "010-1234-1234";
-	
-	void call(String phoneNumber);
-	void receive();
-}
